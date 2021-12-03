@@ -1,0 +1,67 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1er hack para que 1rem = 10px */
+  line-height: 2; /* separacion entre los parrafos de un texto*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem; /*2do hack para que la base sea de 16px*/
+}
+
+/* cuadrito-con-grid */
+
+.contenedor {
+  background-color: #f0f0f0;
+  margin-left: 31.6rem;
+  margin-top: -1rem;
+  margin-bottom: -1rem;
+}
+
+.header {
+  grid-area: header;
+  background-color: #ff8181;
+}
+
+.menu1 {
+  grid-area: menu1;
+  background-color: #646464;
+}
+
+.menu2 {
+  grid-area: menu2;
+  background-color: #646464;
+}
+
+.menu3 {
+  grid-area: menu3;
+  background-color: #646464;
+}
+
+.menu4 {
+  grid-area: menu4;
+  background-color: #646464;
+}
+
+.footer {
+  grid-area: footer;
+  background-color: #70aaff;
+}
+
+.contenedor {
+  height: 100vh;
+  padding: 2.8rem 3.3rem;
+  width: 71.8rem;
+  display: grid;
+  grid-template-columns: 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr;
+  grid-gap: 3rem;
+  grid-template-areas:
+    "header menu1 menu2"
+    "header menu3 menu4"
+    "footer footer footer";
+}

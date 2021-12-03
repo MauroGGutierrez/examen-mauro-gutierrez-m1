@@ -1,0 +1,58 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1er hack para que 1rem = 10px */
+  line-height: 2; /* separacion entre los parrafos de un texto*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem; /*2do hack para que la base sea de 16px*/
+  font-family: "Roboto", sans-serif;
+}
+
+.todo-flex {
+  width: 101%;
+  height: auto;
+  background-color: #ececec;
+  margin-top: -1rem;
+  margin-left: -1rem;
+}
+
+.flex {
+  padding: 2.6rem 20rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  width: 16.5rem;
+  height: 6.3rem;
+  background-color: #ff6060;
+  font-size: 3rem;
+  padding-left: 3.2rem;
+}
+
+.flex button {
+  width: 16.2rem;
+  height: 5.9rem;
+  font-size: 3rem;
+  background-color: #b352ff;
+}
+
+.todolink a {
+  font-size: 2.5rem;
+  text-decoration: none;
+  color: black;
+}
+
+.todolink {
+  background-color: #e0e0e0;
+  padding: 1.8rem 2.5rem 1.6rem 2.5rem;
+  display: flex;
+  gap: 1.9rem;
+}

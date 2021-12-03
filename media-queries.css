@@ -1,0 +1,137 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1er hack para que 1rem = 10px */
+  line-height: 2; /* separacion entre los parrafos de un texto*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem; /*2do hack para que la base sea de 16px*/
+}
+
+.todo-header {
+  background-color: #c2c2c2;
+  width: 110%;
+  height: 7.2rem;
+  margin-top: -1rem;
+  margin-left: -1rem;
+  padding-right: 5rem;
+}
+
+@media (min-width: 768px) {
+  .todo-header {
+    background-color: #c2c2c2;
+    width: 102%;
+    height: 7.2rem;
+    margin-top: -1rem;
+    margin-left: -1rem;
+  }
+}
+
+.container {
+  max-width: auto;
+  margin: 0 auto 0 auto;
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 130rem;
+    margin: 0 auto 0 auto;
+  }
+}
+
+.flex-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1.4rem 3rem;
+}
+
+@media (min-width: 768px) {
+  .flex-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.4rem 3rem;
+  }
+}
+
+.izquierda {
+  background-color: #ea53bf;
+  width: 10rem;
+  height: 4rem;
+}
+
+@media (min-width: 768px) {
+  .izquierda {
+    background-color: #ea53bf;
+    width: 11.9rem;
+    height: 4.3rem;
+  }
+}
+
+.derecha {
+  display: flex;
+  gap: 2rem;
+}
+
+.derecha div {
+  background-color: #e35c5c;
+  width: 7.5rem;
+  height: 2.7rem;
+  border: 0.5rem solid black;
+  margin-right: 2rem;
+}
+
+.menu {
+  background-color: #6eb9e3;
+  width: 7.5rem;
+  height: 2.7rem;
+}
+
+@media (max-width: 768px) {
+  .derecha div {
+    display: none;
+  }
+}
+
+@media (min-width: 768px) {
+  .menu {
+    display: none;
+  }
+}
+/*main*/
+
+.main {
+  height: auto;
+}
+
+.cuadros {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  margin-top: 5rem;
+  align-items: center;
+}
+
+@media (min-width: 768px) {
+  .cuadros {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    margin-top: 20rem;
+    flex-direction: row;
+  }
+}
+
+.cuadro1,
+.cuadro2,
+.cuadro3 {
+  width: 25.1rem;
+  height: 16rem;
+  background-color: #51a654;
+}

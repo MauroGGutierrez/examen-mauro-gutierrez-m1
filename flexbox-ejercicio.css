@@ -1,0 +1,87 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1er hack para que 1rem = 10px */
+  line-height: 2; /* separacion entre los parrafos de un texto*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem; /*2do hack para que la base sea de 16px*/
+}
+
+.contenedor {
+  height: auto;
+  width: 96rem;
+  padding: 6.1rem 3.6rem 9rem 3.6rem;
+  background-color: rgb(207, 207, 207);
+  margin-top: -1rem;
+  margin-left: -1rem;
+}
+
+.superior {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item1 {
+  background-color: rgb(0, 132, 255);
+  width: 24.4rem;
+  height: 24.4rem;
+}
+
+.item2 {
+  background-color: rgb(0, 132, 255);
+  width: 24.4rem;
+  height: 24.4rem;
+}
+
+.item3 {
+  background-color: rgb(0, 132, 255);
+  width: 24.4rem;
+  height: 24.4rem;
+}
+
+.medio {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8.4rem;
+}
+
+.item4 {
+  background-color: #ff6666;
+  width: 40.2rem;
+  height: 24.4rem;
+}
+
+.item5 {
+  background-color: #ff6666;
+  width: 43.9rem;
+  height: 24.4rem;
+}
+
+.item6 {
+  background-color: #46599c;
+  width: 87.7rem;
+  height: 75.4rem;
+  margin-top: 8.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 7.4rem;
+}
+
+.item7 {
+  background-color: #ff6666;
+  width: 35.7rem;
+  height: 24.4rem;
+}
+.item8 {
+  background-color: #ff6666;
+  width: 35.7rem;
+  height: 24.4rem;
+}

@@ -1,0 +1,78 @@
+html {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1er hack para que 1rem = 10px */
+  line-height: 2; /* separacion entre los parrafos de un texto*/
+}
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  font-size: 1.6rem; /*2do hack para que la base sea de 16px*/
+  font-family: "Roboto", sans-serif;
+}
+
+/* headers */
+
+.container {
+  width: 102%;
+  height: 11.6rem;
+  background-color: rgb(236, 236, 236);
+  margin-top: -1rem;
+  margin-left: -1rem;
+}
+
+.grid {
+  display: grid;
+  height: 11.6rem;
+  width: 100%;
+  grid-template-columns: 18rem 1fr 16.2rem;
+  grid-gap: 4.5rem;
+  padding: 2.7rem 4.5rem 2.6rem 4.5rem;
+}
+
+.izquierda {
+  width: 18rem;
+  height: 6.3rem;
+  background-color: #ff6060;
+}
+
+.izquierda p {
+  font-size: 3rem;
+  margin-top: -0.02rem;
+  display: grid;
+  place-items: center;
+}
+
+.centro {
+  margin-left: auto;
+  margin-right: auto;
+  padding: 1rem 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 1.9rem;
+  background-color: #ffbdbd;
+}
+
+.centro a {
+  text-decoration: none;
+  color: black;
+  font-size: 2.5rem;
+  display: grid;
+  place-items: center;
+}
+
+.derecha {
+  background-color: #b352ff;
+  height: 5.9rem;
+}
+
+.derecha p {
+  font-size: 3rem;
+  color: #ffffff;
+  display: grid;
+  place-items: center;
+  margin-top: -0.02rem;
+}
